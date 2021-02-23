@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../../../theme/logo'
+import Text from '../../foundation/Text'
 import { Button } from '../Button'
 import { MenuWrapper } from './styles/MenuWrapper'
 
@@ -29,9 +30,9 @@ const links = [
         {links.map(function (link) {
             return (
                 <li key={link.url}>
-                    <a href={link.url}>
+                    <Text tag="a" variant = "smallestException" href={link.url}>
                         {link.texto}
-                    </a>
+                    </Text>
                 </li>
             )
         })}
